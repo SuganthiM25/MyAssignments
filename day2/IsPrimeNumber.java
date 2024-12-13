@@ -27,7 +27,7 @@ public class IsPrimeNumber {
 	}
 
 }
-	//Query 1: how to validate n numbers in a code to check whether its prime or not
+	//Query 1: how to validate n numbers in a code automatically to check whether its prime or not
 
 	
     
