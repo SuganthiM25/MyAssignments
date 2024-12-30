@@ -12,11 +12,11 @@ public class CheckboxAssignment {
 		
 		//Initialize the driver
 		ChromeDriver driver = new ChromeDriver();
-		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		//Launch Url and maximize the browser		
 		driver.get("https://leafground.com/checkbox.xhtml");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		
 		
 		//Click on the Checkboxes and Verify the checkboxes are checked
 		
@@ -58,7 +58,7 @@ public class CheckboxAssignment {
 	
 		
 		WebElement dis = driver.findElement(By.xpath("(//div[@class='ui-selectbooleancheckbox ui-chkbox ui-widget'])[3]"));
-		 if (dis.isDisplayed()) {
+		 if (dis.isEnabled()) {
              System.out.println("The checkbox is displayed.");
          } else {
              System.out.println("The checkbox is not displayed.");
