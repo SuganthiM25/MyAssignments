@@ -11,6 +11,7 @@ public class PvrCinemas {
 		
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		//Launch the Browser
 		
 		driver.get("https://www.pvrcinemas.com/");
