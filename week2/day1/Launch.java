@@ -7,7 +7,7 @@ public class Launch {
 	public static void main(String[] args) throws InterruptedException {
 		EdgeDriver driver = new EdgeDriver();
 		driver.manage().window().maximize();
-		driver.get("www.google.com");
+		driver.get("https://www.google.com");
 		//Java wait =1000 milliseconds = 1 sec
 		Thread.sleep(1000);
 		driver.quit();
