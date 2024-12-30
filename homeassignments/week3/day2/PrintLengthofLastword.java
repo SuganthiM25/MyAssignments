@@ -18,7 +18,7 @@ public class PrintLengthofLastword {
 		String[] words1 = s2.split(" ");
 		if (words1.length > 0) {
             // Get the last word
-            String lastWord = words1[words1.length];
+            String lastWord = words1[words1.length - 1];
 
             // Print the length of the last word
             System.out.println("Length of the last word :"+lastWord+" is " + lastWord.length());
